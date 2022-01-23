@@ -49,7 +49,7 @@ do
 	function getFontData(info)
 		db = db or Fontain.db.profile
 		local font = _G[info.arg]
-		if font and font:GetObjectType() == "font" then
+		if font and font:GetObjectType() == "Font" then
 			exampleFont:SetFontObject(font)
 			exampleFont:SetText("Example: " .. info.arg)
 			exampleFontContainer:Show()
