@@ -27,7 +27,7 @@ local frame_defaults = {
 	insets = {left = 2, right = 2, top = 2, bottom = 2}
 }
 
-local exampleFontContainer = CreateFrame("Frame", nil, InterfaceOptionsFrame)
+local exampleFontContainer = CreateFrame("Frame", nil, InterfaceOptionsFrame, BackdropTemplateMixin and "BackdropTemplate")
 exampleFontContainer:SetBackdrop(frame_defaults)
 exampleFontContainer:SetBackdropColor(0.2, 0.2, 0.2, 0.8)
 exampleFontContainer:SetPoint("TOPLEFT", InterfaceOptionsFrame, "BOTTOMLEFT")
